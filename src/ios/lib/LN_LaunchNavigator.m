@@ -1298,7 +1298,7 @@ static NSDictionary* extras;
 {
     LN_Reachability *reachability = [LN_Reachability reachabilityForInternetConnection];
     LN_NetworkStatus networkStatus = [reachability currentReachabilityStatus];
-    return networkStatus != NotReachable;
+    return networkStatus != NotReachable_;
 }
 
 - (BOOL)isMapAppInstalled:(LNApp)mapApp {

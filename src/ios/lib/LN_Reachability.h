@@ -12,16 +12,17 @@
 
 
 typedef enum : NSInteger {
-    NotReachable = 0,
-    ReachableViaWiFi,
-    ReachableViaWWAN
+    NotReachable_ = 0,
+    ReachableViaWiFi_,
+    ReachableViaWWAN_
 } LN_NetworkStatus;
 
 #pragma mark IPv6 Support
 //Reachability fully support IPv6.  For full details, see ReadMe.md.
 
 
-extern NSString *kReachabilityChangedNotification;
+// extern NSString *kReachabilityChangedNotification;
+#define kReachabilityChangedNotification @"kNetworkReachabilityChangedNotification"
 
 
 @interface LN_Reachability : NSObject
